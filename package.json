@@ -1,0 +1,41 @@
+{
+  "name": "notes-app-dibimbing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "setup": "ts-node src/db/setupDatabase.ts",
+    "dev": "npm run setup && next dev",
+    "start": "npm run setup && next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.4",
+    "@apollo/server": "^4.11.0",
+    "@as-integrations/next": "^3.1.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "apollo-server-micro": "^3.13.0",
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.3.24",
+    "graphql": "^16.9.0",
+    "micro": "^9.4.1",
+    "next": "14.2.5",
+    "pg": "^8.12.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20",
+    "@types/pg": "^8.11.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
